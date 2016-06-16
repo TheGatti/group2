@@ -33,12 +33,20 @@
   img {
     background: rgba(0,0,0,0.3);
     border: 2px solid black;
+    width: 70%;
+    margin-left: 3%;
+    margin-top: 2%;
   }
   h5 {
     margin: 0 auto;
     cursor: pointer;
     &:hover{
       font-size: 1.2em;
+      color: #FFF;
     }
+  }
+  h2 {
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
 }

@@ -33,12 +33,19 @@
   transition: transform .5s ease-in-out; }
   .titleInWindow img {
     background: rgba(0, 0, 0, 0.3);
-    border: 2px solid black; }
+    border: 2px solid black;
+    width: 70%;
+    margin-left: 3%;
+    margin-top: 2%; }
   .titleInWindow h5 {
     margin: 0 auto;
     cursor: pointer; }
     .titleInWindow h5:hover {
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      color: #FFF; }
+  .titleInWindow h2 {
+    margin-top: 0%;
+    margin-bottom: 0%; }
 
 .charPage {
   width: 80%;
@@ -49,8 +56,15 @@
   display: inline-block;
   display: none;
   width: 100px;
-  margin: 0 auto;
-  color: blue; }
+  margin: 0 auto; }
+
+span.toLancePage {
+  margin-left: 0%; }
+
+span.toLancePage:hover {
+  font-size: 1em;
+  cursor: pointer;
+  color: #FFF; }
 
 .mrEd {
   background-image: url(assets/MrEd.png);
@@ -89,7 +103,7 @@ p.horsePenelope {
   width: 200px;
   height: 200px;
   margin-left: 38%;
-  margin-top: 14%; }
+  margin-top: 6%; }
 
 div.hector:hover {
   transform: translateY(-65%);
@@ -109,6 +123,10 @@ input {
 button {
   border: 3px solid black;
   cursor: pointer; }
+
+.clickOnHorse {
+  margin-top: 2%;
+  margin-bottom: 0%; }
 
 .selected.mrEd {
   transform: translateX(50%); }
@@ -136,6 +154,7 @@ button {
     width: 200px;
     text-align: center; }
 
+
 .winLose {
   display: block;
   width: 90%;
@@ -145,3 +164,101 @@ button {
     text-align: center; }
   .winLose img {
     margin: 0 auto; }
+
+  .trashTalk img {
+    width: 100px;
+    height: 100px;
+    position: relative; }
+  .trashTalk .heath {
+    top: 89px;
+    transform: scaleX(-1); }
+  .trashTalk .zombie {
+    left: -204px;
+    top: 26px;
+    transform: scaleX(-1); }
+  .trashTalk .dmx {
+    left: 498px;
+    bottom: 40px; }
+  .trashTalk .ed {
+    bottom: 81px;
+    left: 261px;
+    transform: scaleX(-1); }
+
+.fightPage .fence {
+  width: 100%;
+  height: 50px;
+  margin-left: 0; }
+
+.fightPage .myFighter {
+  margin-top: 8%; }
+
+.fightPage img {
+  width: 100px;
+  height: 100px;
+  position: relative; }
+
+.heath {
+  top: 89px;
+  transform: scaleX(-1); }
+
+.zombie {
+  left: -204px;
+  top: 26px;
+  transform: scaleX(-1); }
+
+.dmx {
+  left: 498px;
+  bottom: -34px;
+  z-index: 2; }
+
+.ed {
+  bottom: 7px;
+  left: 252px;
+  transform: scaleX(-1); }
+
+.lance {
+  bottom: -46px;
+  left: -43px; }
+
+h3, p {
+  text-align: center;
+  margin: 0 auto; }
+
+a {
+  color: #FFF; }
+
+img {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2%; }
+
+span.toFightPage {
+  text-align: center;
+  margin-left: 40%; }
+
+span.toFightPage:hover {
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #FFF; }
+
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(10deg); }
+  50% {
+    -webkit-transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(10deg); } }
+
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg); }
+  50% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(10deg); } }
+
+.swingimage {
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: swinging 3.5s ease-in-out forwards infinite; }

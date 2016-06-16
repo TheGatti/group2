@@ -8,6 +8,7 @@ var joust = {
   myHorse: {},
   enemy: {},
   enemyHorse: {},
+  trashStr: '',
 
   init: function() {
     joust.styling();
@@ -40,12 +41,16 @@ var joust = {
 
   chooseChar: function() {
     // show inputs for name and lance, and horses
+      $('charPage').fadeIn();
+      $(".username").fadeIn();
+      $(".lancename").fadeIn();
       $('.username').on('click', function(event){
             event.preventDefault();
             var $username = $('input[name="name"]').val();
             console.log($username);
             var createChar = charObject.init();
-            myChar = createChar($username);
+            joust.myChar = createChar({name: $username});
+            console.log(createChar({name: $username}));
             $(".username").fadeOut();
           });
     // logs lance, fades lance button, fades in continue button
@@ -66,30 +71,39 @@ var joust = {
         console.log(this);
 
         if(horse === 'penelope') {
-          myHorse = horseObject.penelope;
+          joust.myHorse = horseObject.penelope;
         } else if (horse === 'hector') {
-          myHorse = horseObject.hector;
+          joust.myHorse = horseObject.hector;
         } else {
-          myHorse = horseObject.mrEd;
+          joust.myHorse = horseObject.mrEd;
         };
-        console.log("this is my horse: ", myHorse)
+        console.log("this is my horse: ", joust.myHorse)
       });
 
       // fades out char page and sends to lance page
       $('.toLancePage').on('click', function(){
         event.preventDefault();
         $('.charPage').fadeOut();
+        $(".toLancePage").fadeIn();
         joust.lancePage();
       })
   },
-  trashTalk: function(){
-    var trashStr = prompt("time to trash talk!")
-    myChar.trashBoating(trashStr);
-    $('.trashTalk').fadeIn();
+  lancePage: function(){
+    $('.toTrashPage').on('click', function(){
+      event.preventDefault();
+      $('.lancePage').fadeOut();
+      joust.trashTalk();
+    })
   },
-  showBoating: function(){
-    var showBoatStr = prompt("time to Showboat!")
-    myChar.trashBoating(showBoatStr);
+  trashTalk: function(){
+    $('.trashTalk').fadeIn();
+    $('.trash').on('click', function(event){
+      event.preventDefault();
+      joust.trashStr = $('input[name="trash"]').val();
+      $('input[name="trash"]').val('');
+      $('.trashTalk').fadeOut();
+      joust.fight();
+    })
   },
   fight: function(){
     // choose attack
@@ -116,17 +130,4 @@ var joust = {
 
     prompt('Would you like to play again?');
   },
-  chooseHorse: function(whichHorse){
-    var horse = horseObject;
-    if (whichHorse === "Mr. Ed"){
-        horse = new Horse({speed: 100, name: "Mr. Ed", healthWeapon: "Super-sonic", balanceWeapon: "Rainbow Fart"});
-      }
-    else if (whichHorse === "Penelope"){
-      horse = new Horse({speed:100, name: "Penelope", healthWeapon: "Laser Eyes", balanceWeapon: "Thunder Wings"});
-    }
-    else if (whichHorse === "Hector"){
-      horse = new Horse({speed:100, name: "Hector", healthWeapon: "Fire Breath", balanceWeapon: "Stank Eye"})
-    }
-    return horse;
-  }
 }

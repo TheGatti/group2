@@ -11,7 +11,7 @@ var charObject = {
         this.name = props && props.name ? props.name : "DMX";
         this.health = 100;
         this.balance = 100;
-        this.lance = props && props.name ? props.lance : "Rusty Lance";
+        this.lance = props && props.name ? props.lance : "Lance Bass Bass Lance";
       }
       trashBoating(str) {
         console.log(`${this.name}: ${str}`);

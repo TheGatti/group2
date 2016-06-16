@@ -8,8 +8,15 @@
   display: none;
   width: 100px;
   margin: 0 auto;
-  color: blue;
 }
+span.toLancePage {
+  margin-left: 0%;
+}
+span.toLancePage:hover {
+   font-size: 1em;
+   cursor: pointer;
+   color: #FFF;
+  }
 .mrEd {
   background-image: url(assets/MrEd.png);
   background-size: 200px 200px;
@@ -47,7 +54,7 @@ p.horsePenelope {
   width: 200px;
   height: 200px;
   margin-left: 38%;
-  margin-top: 14%;
+  margin-top: 6%;
 }
 div.hector:hover {
   transform: translateY(-65%);
@@ -67,6 +74,10 @@ input {
 button {
   border: 3px solid black;
   cursor: pointer;
+}
+.clickOnHorse {
+  margin-top: 2%;
+  margin-bottom: 0%;
 }
 .selected.mrEd{
   transform: translateX(50%);
