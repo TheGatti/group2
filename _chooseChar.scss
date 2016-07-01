@@ -1,0 +1,90 @@
+.charPage {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.toLancePage {
+  display: inline-block;
+  display: none;
+  width: 100px;
+  margin: 0 auto;
+}
+span.toLancePage {
+  margin-left: 0%;
+}
+span.toLancePage:hover {
+   font-size: 1em;
+   cursor: pointer;
+   color: #FFF;
+  }
+.mrEd {
+  background-image: url(assets/MrEd.png);
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  margin-left: -23%;
+}
+div.mrEd:hover {
+  transform: translateX(50%);
+  cursor: pointer;
+}
+p.horseMrEd {
+  margin-left: 48%;
+  color: #FFF;
+}
+.penelope {
+  background-image: url(assets/Hector.png);
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  margin: -15% 0% -7% 103%;
+}
+div.penelope:hover {
+  transform: translateX(-67%);
+  cursor: pointer;
+}
+p.horsePenelope {
+  margin-left: 48%;
+  margin-left: -68%;
+  color: #FFF;
+}
+.hector {
+  background-image: url(assets/thunder-pegasus.png);
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  margin-left: 38%;
+  margin-top: 6%;
+}
+div.hector:hover {
+  transform: translateY(-65%);
+  cursor: pointer;
+}
+p.horseHector {
+  margin-left: -74%;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  color: #FFF;
+}
+input {
+  margin-left: 4%;
+  margin-top: 5%;
+  border: 3px solid black;
+}
+button {
+  border: 3px solid black;
+  cursor: pointer;
+}
+.clickOnHorse {
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+.selected.mrEd{
+  transform: translateX(50%);
+}
+.selected.hector{
+  transform: translateY(-65%);
+}
+.selected.penelope{
+  transform: translateX(-67%);
+}

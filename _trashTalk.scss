@@ -1,0 +1,43 @@
+.trashTalk {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+  input {
+    display: block;
+    margin: 0 auto;
+    width: 90%
+  }
+  button {
+    display: block;
+    margin: 5px auto;
+    width: 200px;
+    text-align: center;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  .heath {
+    top: 89px;
+    transform: scaleX(-1);
+  }
+  .zombie {
+    left: -204px;
+    top: 26px;
+    transform: scaleX(-1);
+  }
+  .dmx {
+    left: 498px;
+    bottom: 40px;
+  }
+  .ed {
+    bottom: 81px;
+    left: 261px;
+    transform: scaleX(-1);
+  }
+}

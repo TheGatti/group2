@@ -1,0 +1,37 @@
+h3, p {
+  text-align: center;
+  margin: 0 auto;
+}
+a {
+  color: #FFF;
+}
+img {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+span.toFightPage {
+  text-align: center;
+  margin-left: 40%;
+}
+span.toFightPage:hover {
+   font-size: 1.2em;
+   cursor: pointer;
+   color: #FFF;
+  }
+  @-webkit-keyframes swinging{
+      0%{-webkit-transform: rotate(10deg);}
+      50%{-webkit-transform: rotate(-5deg)}
+      100%{-webkit-transform: rotate(10deg);}
+  }
+  @keyframes swinging{
+      0%{transform: rotate(10deg);}
+      50%{transform: rotate(-5deg)}
+      100%{transform: rotate(10deg);}
+  }
+  .swingimage{
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+      -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+      animation: swinging 3.5s ease-in-out forwards infinite;
+  }

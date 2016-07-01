@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Knightryder</title>
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="node_modules/normalize-css/normalize.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <section class='main-container'>
+      <div class='title'>
+        <h1>KNIGHT :: RYDER</h1>
+        <button id="newGame" type="button" name="newGame">New Game</button>
+      </div>
+      <div class="game-window" class="hidden">
+        <!--title-->
+        <div class='titleInWindow'>
+          <h2>Knightryder</h2>
+          <img src="assets/dmx.png" alt=""/>
+          <h5 class="toCharPage">-click to continue-</h5>
+        </div>
+
+        <!--char/horse-->
+        <div class="charPage">
+          <input type="input" name="name" placeholder="type name"value="">
+          <button type="button" name="name" class="username">submit</button>
+          <input type="input" name="lance" placeholder="name your lance" value="">
+          <button type="button" name="lance" class="lancename">submit</button>
+          <span class="toLancePage"> -continue- </span>
+          <div class="clickOnHorse">
+            -Click on a horse-
+          </div>
+          <div class="mrEd horse-img">
+            <p class="horseMrEd">
+              Mr. Ed
+            </p>
+          </div>
+          <div class="penelope horse-img">
+            <p class="horsePenelope">
+              Penelope
+            </p>
+          </div>
+          <div class="hector horse-img">
+            <p class="horseHector">
+              Hector
+            </p>
+
+          </div>
+        </div>
+
+        <!--lancepage -->
+        <div class="lancePage">
+          <h3>Uh oh... looks like we're out of those lances</h3>
+          <p>
+            LUCKILY... we have this handy <a>Lance Bass Bass Lance.</a>
+          </p>
+
+          <img src="assets/lacebass-basslance.png" alt="" />
+
+          <img src="assets/lancebass-basslance.png" alt="" />
+
+          <span class="toTrashPage"> -click to continue- </span>
+          <img class="swingimage" src="assets/lancebass-basslance.png" alt="" />
+        </div>
+
+        <!-- trash talk -->
+        <div class="trashTalk">
+          <h3>Time to Trash Talk</h3>
+          <p>Trash talking is a way to knock your opponent off balance.<br> Make sure it hurts. <br>That's how the Knight Ryders roll.</p>
+          <input type="input" name="trash" placeholder="X gonna give it to ya." value="">
+          <button type="button" name="trash" class="trash">submit</button>
+          <div class="enemyFighter">
+            <!-- img stuff -->
+            <!-- <div class="heath"></div>
+            <div class="heathHorse"></div> -->
+            <img class="heath" src="assets/heath.png" alt="">
+            <img class="zombie" src="assets/zombiehorse.png" alt="">
+          </div>
+          <div class="myFighter">
+            <!-- dmx and horse img stuff (lance bass as a bass lance) -->
+            <!-- <div class="heath"></div>
+            <div class="heathHorse"></div> -->
+            <img class="dmx" src="assets/dmx.png" alt="">
+            <img class="ed" src="assets/MrEd.png" alt="">
+          </div>
+        </div>
+        <!-- fight -->
+
+        <div class="winLose">
+          <img src="" alt="" />
+          <h3></h3>
+        </div>
+        <div class="fightPage">
+          <div class="myFighter">
+            <img class="dmx" src="assets/dmx.png" alt="">
+            <img class="ed" src="assets/MrEd.png" alt="">
+            <img class="lance" src="assets/lancebass-basslance.png" alt="">
+          </div>
+          <img class="fence" src="assets/fence.png" alt="" />
+          <div class="enemyFighter">
+            <img class="heath" src="assets/heath.png" alt="">
+            <img class="zombie" src="assets/zombiehorse.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Scripts-->
+    <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="characters.js" charset="utf-8"></script>
+    <script src="horses.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.fightPage {
+ .fence {
+   width: 100%;
+   height: 50px;
+   margin-left: 0;
+  //  margin-top: 25%;
+ }
+ .myFighter{
+   margin-top: 8%;
+ }
+ img {
+   width: 100px;
+   height: 100px;
+   position: relative;
+ }
+}
+
+.heath {
+  top: 89px;
+  transform: scaleX(-1);
+}
+.zombie {
+  left: -204px;
+  top: 26px;
+  transform: scaleX(-1);
+}
+.dmx {
+  left: 498px;
+  bottom: -34px;
+  z-index: 2;
+}
+.ed {
+  bottom: 7px;
+  left: 252px;
+  transform: scaleX(-1);
+}
+.lance {
+  bottom: -46px;
+  left: -43px;
+}

@@ -1,0 +1,52 @@
+.title {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+#newGame {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+  border: 3px solid black;
+  outline: none;
+  background: transparent;
+}
+
+.game-window {
+  width: 70%;
+  margin: 20px auto;
+  height: 500px;
+  background: lightslategray;
+  border: 10px solid black;
+  box-shadow: 0 5px 5px 1px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.titleInWindow {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 600px;
+  text-align: center;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  img {
+    background: rgba(0,0,0,0.3);
+    border: 2px solid black;
+    width: 70%;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  h5 {
+    margin: 0 auto;
+    cursor: pointer;
+    &:hover{
+      font-size: 1.2em;
+      color: #FFF;
+    }
+  }
+  h2 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+}
